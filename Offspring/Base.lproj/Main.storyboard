@@ -11,7 +11,7 @@
         <scene sceneID="nSY-uX-uLz">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4JF-ep-YPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController title="Shop" id="RHJ-qz-PRY" sceneMemberID="viewController">
+                <viewController title="Shop" id="RHJ-qz-PRY" customClass="CategoryViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zbY-bk-8iN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
         <!--Products-->
         <scene sceneID="75F-Cn-zYG">
             <objects>
-                <tableViewController id="Vkr-hH-ZJn" sceneMemberID="viewController">
+                <tableViewController id="Vkr-hH-ZJn" customClass="ProductsTableViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="e9j-Mw-f8O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,7 +187,7 @@
         <!--Product Detail-->
         <scene sceneID="CDF-LD-JKH">
             <objects>
-                <viewController id="gVj-Fq-yeQ" sceneMemberID="viewController">
+                <viewController id="gVj-Fq-yeQ" customClass="ProductDetailViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="47u-2H-mWv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,7 +329,7 @@
         <!--Shopping Cart-->
         <scene sceneID="bna-UI-6up">
             <objects>
-                <viewController id="UDb-px-U4f" sceneMemberID="viewController">
+                <viewController id="UDb-px-U4f" customClass="CartViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D5b-a1-CKO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,7 +421,7 @@
         <!--Checkout-->
         <scene sceneID="X5B-sV-iIE">
             <objects>
-                <viewController id="6z0-hS-jdQ" sceneMemberID="viewController">
+                <viewController id="6z0-hS-jdQ" customClass="CheckoutViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u3K-as-L6U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,7 +451,7 @@
         <!--Shipping-->
         <scene sceneID="WTk-qi-rXu">
             <objects>
-                <viewController id="Xzs-Jl-1B2" sceneMemberID="viewController">
+                <viewController id="Xzs-Jl-1B2" customClass="ShippingViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wxI-Ci-yAT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -493,10 +493,10 @@
             </objects>
             <point key="canvasLocation" x="3763.7681159420295" y="761.38392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment View Controller-->
         <scene sceneID="Pxo-aQ-553">
             <objects>
-                <viewController id="CBz-Aq-7a1" sceneMemberID="viewController">
+                <viewController id="CBz-Aq-7a1" customClass="PaymentViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cfW-JI-Gvr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -544,7 +544,7 @@
         <!--Contact-->
         <scene sceneID="bKq-UV-aYa">
             <objects>
-                <viewController id="HWA-XI-JpC" sceneMemberID="viewController">
+                <viewController id="HWA-XI-JpC" customClass="ContactViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zTF-5Q-4cO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -572,7 +572,7 @@
         <!--About Us-->
         <scene sceneID="aoG-wX-BrL">
             <objects>
-                <viewController id="iP7-Du-gWC" sceneMemberID="viewController">
+                <viewController id="iP7-Du-gWC" customClass="AboutViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="22r-4r-tfy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -600,7 +600,7 @@
         <!--Account-->
         <scene sceneID="pkG-od-qdP">
             <objects>
-                <viewController id="dZz-bn-PDe" sceneMemberID="viewController">
+                <viewController id="dZz-bn-PDe" customClass="AccountViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mau-bF-6YD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

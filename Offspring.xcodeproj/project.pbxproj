@@ -12,6 +12,16 @@
 		BA86308624D8E36E00C2BBB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA86308424D8E36E00C2BBB8 /* Main.storyboard */; };
 		BA86308824D8E36F00C2BBB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA86308724D8E36F00C2BBB8 /* Assets.xcassets */; };
 		BA86308B24D8E36F00C2BBB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA86308924D8E36F00C2BBB8 /* LaunchScreen.storyboard */; };
+		BA86309424D912B000C2BBB8 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86309324D912B000C2BBB8 /* ContactViewController.swift */; };
+		BA86309624D912BE00C2BBB8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86309524D912BE00C2BBB8 /* AboutViewController.swift */; };
+		BA86309824D912CE00C2BBB8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86309724D912CE00C2BBB8 /* AccountViewController.swift */; };
+		BA86309A24D912DD00C2BBB8 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86309924D912DD00C2BBB8 /* CategoryViewController.swift */; };
+		BA86309C24D912F000C2BBB8 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86309B24D912F000C2BBB8 /* ProductDetailViewController.swift */; };
+		BA86309E24D9130500C2BBB8 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86309D24D9130500C2BBB8 /* ProductsTableViewController.swift */; };
+		BA8630A024D9132000C2BBB8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86309F24D9132000C2BBB8 /* CartViewController.swift */; };
+		BA8630A224D9132F00C2BBB8 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8630A124D9132F00C2BBB8 /* CheckoutViewController.swift */; };
+		BA8630A424D9133C00C2BBB8 /* ShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8630A324D9133C00C2BBB8 /* ShippingViewController.swift */; };
+		BA8630A624D9134D00C2BBB8 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8630A524D9134D00C2BBB8 /* PaymentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		BA86308724D8E36F00C2BBB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA86308A24D8E36F00C2BBB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA86308C24D8E36F00C2BBB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA86309324D912B000C2BBB8 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		BA86309524D912BE00C2BBB8 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		BA86309724D912CE00C2BBB8 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		BA86309924D912DD00C2BBB8 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		BA86309B24D912F000C2BBB8 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		BA86309D24D9130500C2BBB8 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		BA86309F24D9132000C2BBB8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		BA8630A124D9132F00C2BBB8 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		BA8630A324D9133C00C2BBB8 /* ShippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingViewController.swift; sourceTree = "<group>"; };
+		BA8630A524D9134D00C2BBB8 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +76,30 @@
 			children = (
 				BA86307E24D8E36E00C2BBB8 /* AppDelegate.swift */,
 				BA86308024D8E36E00C2BBB8 /* SceneDelegate.swift */,
+				BA86309224D911F400C2BBB8 /* View Controllers */,
 				BA86308424D8E36E00C2BBB8 /* Main.storyboard */,
 				BA86308724D8E36F00C2BBB8 /* Assets.xcassets */,
 				BA86308924D8E36F00C2BBB8 /* LaunchScreen.storyboard */,
 				BA86308C24D8E36F00C2BBB8 /* Info.plist */,
 			);
 			path = Offspring;
+			sourceTree = "<group>";
+		};
+		BA86309224D911F400C2BBB8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA86309324D912B000C2BBB8 /* ContactViewController.swift */,
+				BA86309524D912BE00C2BBB8 /* AboutViewController.swift */,
+				BA86309724D912CE00C2BBB8 /* AccountViewController.swift */,
+				BA86309924D912DD00C2BBB8 /* CategoryViewController.swift */,
+				BA86309D24D9130500C2BBB8 /* ProductsTableViewController.swift */,
+				BA86309B24D912F000C2BBB8 /* ProductDetailViewController.swift */,
+				BA86309F24D9132000C2BBB8 /* CartViewController.swift */,
+				BA8630A124D9132F00C2BBB8 /* CheckoutViewController.swift */,
+				BA8630A324D9133C00C2BBB8 /* ShippingViewController.swift */,
+				BA8630A524D9134D00C2BBB8 /* PaymentViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +174,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA86307F24D8E36E00C2BBB8 /* AppDelegate.swift in Sources */,
+				BA86309824D912CE00C2BBB8 /* AccountViewController.swift in Sources */,
+				BA86309C24D912F000C2BBB8 /* ProductDetailViewController.swift in Sources */,
 				BA86308124D8E36E00C2BBB8 /* SceneDelegate.swift in Sources */,
+				BA86309624D912BE00C2BBB8 /* AboutViewController.swift in Sources */,
+				BA86309E24D9130500C2BBB8 /* ProductsTableViewController.swift in Sources */,
+				BA86309A24D912DD00C2BBB8 /* CategoryViewController.swift in Sources */,
+				BA8630A624D9134D00C2BBB8 /* PaymentViewController.swift in Sources */,
+				BA8630A024D9132000C2BBB8 /* CartViewController.swift in Sources */,
+				BA8630A224D9132F00C2BBB8 /* CheckoutViewController.swift in Sources */,
+				BA8630A424D9133C00C2BBB8 /* ShippingViewController.swift in Sources */,
+				BA86309424D912B000C2BBB8 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
