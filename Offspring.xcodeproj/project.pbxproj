@@ -24,6 +24,8 @@
 		BA8630A624D9134D00C2BBB8 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8630A524D9134D00C2BBB8 /* PaymentViewController.swift */; };
 		BA8630A924DA3DAC00C2BBB8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8630A824DA3DAC00C2BBB8 /* User.swift */; };
 		BA8630AB24DA3DDE00C2BBB8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8630AA24DA3DDE00C2BBB8 /* Product.swift */; };
+		BA8630AD24DA40F700C2BBB8 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8630AC24DA40F700C2BBB8 /* Address.swift */; };
+		BA8630AF24DA41FC00C2BBB8 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8630AE24DA41FC00C2BBB8 /* Payment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		BA8630A524D9134D00C2BBB8 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		BA8630A824DA3DAC00C2BBB8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BA8630AA24DA3DDE00C2BBB8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		BA8630AC24DA40F700C2BBB8 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		BA8630AE24DA41FC00C2BBB8 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +114,10 @@
 		BA8630A724DA3D9300C2BBB8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BA8630A824DA3DAC00C2BBB8 /* User.swift */,
 				BA8630AA24DA3DDE00C2BBB8 /* Product.swift */,
+				BA8630A824DA3DAC00C2BBB8 /* User.swift */,
+				BA8630AC24DA40F700C2BBB8 /* Address.swift */,
+				BA8630AE24DA41FC00C2BBB8 /* Payment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,9 +199,11 @@
 				BA86309C24D912F000C2BBB8 /* ProductDetailViewController.swift in Sources */,
 				BA86308124D8E36E00C2BBB8 /* SceneDelegate.swift in Sources */,
 				BA86309624D912BE00C2BBB8 /* AboutViewController.swift in Sources */,
+				BA8630AF24DA41FC00C2BBB8 /* Payment.swift in Sources */,
 				BA86309E24D9130500C2BBB8 /* ProductsTableViewController.swift in Sources */,
 				BA86309A24D912DD00C2BBB8 /* CategoryViewController.swift in Sources */,
 				BA8630A624D9134D00C2BBB8 /* PaymentViewController.swift in Sources */,
+				BA8630AD24DA40F700C2BBB8 /* Address.swift in Sources */,
 				BA8630A024D9132000C2BBB8 /* CartViewController.swift in Sources */,
 				BA8630A224D9132F00C2BBB8 /* CheckoutViewController.swift in Sources */,
 				BA8630A424D9133C00C2BBB8 /* ShippingViewController.swift in Sources */,
