@@ -7,27 +7,44 @@
 //
 
 import Foundation
+import UIKit
 
 enum ProductType: String {
     case essentials = "Baby Essentials"
-    case diapers = "Modern Design Printed Diapers"
+    case diapers = "Fashion Diapers"
     case wipes = "Organic Wipes"
     case bundles = "Subscriptions Savings"
     case samples = "Free Samples"
 }
 
-struct Product {
+class Product {
     let name: String
     let sku: String
     let type: ProductType
+    let image: UIImage?
     let vendor: String
     var price: Double
     let weight: Double
-    let size: String?
-    let print: String?
     let description: String
-    var reviewStars: Int = 5
-    var reviewQuantity: Int = 0
-    var isAvailable: Bool = true
-    var isLoved: Bool = false
+    var reviewStars: Int
+    var reviewQuantity: Int
+    var isAvailable: Bool
+    var isLoved: Bool
+    
+    init(name: String, sku: String, type: ProductType, image: UIImage?, price: Double, weight: Double, description: String) {
+        self.name = name
+        self.sku = sku
+        self.type = type
+        self.image = image
+        self.vendor = "OffspringUS.com"
+        self.price = price
+        self.weight = weight
+        self.description = description
+        self.reviewStars = 0
+        self.reviewQuantity = 0
+        self.isAvailable = true
+        self.isLoved = false
+    }
 }
+
+
