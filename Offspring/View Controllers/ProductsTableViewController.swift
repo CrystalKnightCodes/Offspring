@@ -10,6 +10,7 @@ import UIKit
 
 class ProductsTableViewController: UITableViewController {
 
+    var productArray: [Product]?
     override func viewDidLoad() {
         super.viewDidLoad()
 
