@@ -23,10 +23,15 @@ class ProductDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
+    func updateViews() {
+        productImage.image = product?.image
+        priceLabel.text = "$\(String(product!.price))"
+        skuLabel.text = product?.sku
+        // TODO: Implement Pickers
+    }
 
     /*
     // MARK: - Navigation
