@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v4O-3L-pto">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4tL-Vg-HYS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L9F-zx-Tl7">
-                                <rect key="frame" x="20" y="108" width="374" height="685"/>
+                                <rect key="frame" x="20" y="160" width="374" height="682"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RyO-Qd-ItA">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="217"/>
@@ -102,16 +102,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="igf-Lb-pqj">
-                                        <rect key="frame" x="0.0" y="474" width="374" height="211"/>
+                                        <rect key="frame" x="0.0" y="474" width="374" height="208"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f6d-3x-qHt">
-                                                <rect key="frame" x="137" y="0.0" width="100.5" height="100.5"/>
+                                                <rect key="frame" x="137.5" y="0.0" width="99" height="99"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="f6d-3x-qHt" secondAttribute="height" multiplier="1:1" id="Mm0-Rq-T18"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZEG-Gf-pqJ">
-                                                <rect key="frame" x="140.5" y="110.5" width="93" height="100.5"/>
+                                                <rect key="frame" x="140.5" y="109" width="93" height="99"/>
                                                 <state key="normal" title="Free Samples"/>
                                                 <connections>
                                                     <segue destination="Vkr-hH-ZJn" kind="show" identifier="SampleSegue" id="CWe-9c-q46"/>
@@ -132,9 +132,10 @@
                         <viewLayoutGuide key="safeArea" id="fHT-4L-OU6"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Shop" image="bag" catalog="system" id="g3n-Ms-erf"/>
+                    <navigationItem key="navigationItem" title="Shop" id="DEd-xj-mB2"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="128.98550724637681" y="762.72321428571422"/>
+            <point key="canvasLocation" x="129" y="847"/>
         </scene>
         <!--Products-->
         <scene sceneID="75F-Cn-zYG">
@@ -182,7 +183,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06t-M2-EqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="861" y="763"/>
+            <point key="canvasLocation" x="883" y="847"/>
         </scene>
         <!--Product Detail-->
         <scene sceneID="CDF-LD-JKH">
@@ -193,14 +194,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2AU-WC-LPs">
-                                <rect key="frame" x="82" y="108" width="250" height="250"/>
+                                <rect key="frame" x="82" y="160" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2AU-WC-LPs" secondAttribute="height" multiplier="1:1" id="onQ-hD-E9I"/>
                                     <constraint firstAttribute="height" constant="250" id="qJI-97-zIm"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="i88-2M-H0e">
-                                <rect key="frame" x="118.5" y="366" width="177" height="96"/>
+                                <rect key="frame" x="118.5" y="418" width="177" height="96"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-mZ-98V">
                                         <rect key="frame" x="0.0" y="0.0" width="61" height="33.5"/>
@@ -244,7 +245,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y8S-VA-cO7" userLabel="Picker Stack View">
-                                <rect key="frame" x="20" y="498.5" width="374" height="216"/>
+                                <rect key="frame" x="20" y="550.5" width="374" height="216"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPO-Gm-Ape" userLabel="Size">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="216"/>
@@ -254,27 +255,27 @@
                                     </pickerView>
                                 </subviews>
                             </stackView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9ph-fd-uae">
-                                <rect key="frame" x="20" y="724.5" width="374" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9ph-fd-uae">
+                                <rect key="frame" x="20" y="636.5" width="374" height="32"/>
                                 <segments>
                                     <segment title="Purchase Once"/>
                                     <segment title="Subscribe and Save 15%"/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBc-G6-mif">
-                                <rect key="frame" x="123.5" y="765.5" width="167" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBc-G6-mif">
+                                <rect key="frame" x="123.5" y="677.5" width="167" height="53"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <state key="normal" title="Add to Cart"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Product description." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Ee-vS-B1O">
-                                <rect key="frame" x="20" y="828.5" width="374" height="47.5"/>
+                                <rect key="frame" x="20" y="876" width="374" height="0.0"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="dsT-Qh-Jht" userLabel="Picker Label Stack View">
-                                <rect key="frame" x="93.5" y="468" width="227" height="20.5"/>
+                                <rect key="frame" x="93.5" y="520" width="227" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-nQ-yQP">
                                         <rect key="frame" x="0.0" y="0.0" width="38.5" height="20.5"/>
@@ -324,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZk-jf-q2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1556.521739130435" y="762.72321428571422"/>
+            <point key="canvasLocation" x="1584" y="846"/>
         </scene>
         <!--Shopping Cart-->
         <scene sceneID="bna-UI-6up">
@@ -335,14 +336,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VHK-Nn-IzQ">
-                                <rect key="frame" x="20" y="108" width="374" height="500"/>
+                                <rect key="frame" x="20" y="160" width="374" height="500"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="IfS-cl-Q5i"/>
                                 </constraints>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ey2-g6-mPq" userLabel="Price Stack View">
-                                <rect key="frame" x="20" y="618" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="670" width="374" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Total Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roT-rM-0O3">
                                         <rect key="frame" x="0.0" y="0.0" width="89.5" height="20.5"/>
@@ -359,7 +360,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a note to your order:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LE-jB-cLo">
-                                <rect key="frame" x="20" y="648.5" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="700.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -417,7 +418,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VpO-Zj-YV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2253.6231884057975" y="762.72321428571422"/>
+            <point key="canvasLocation" x="2274" y="846"/>
         </scene>
         <!--Checkout-->
         <scene sceneID="X5B-sV-iIE">
@@ -447,7 +448,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sP0-UD-zeJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3010" y="762"/>
+            <point key="canvasLocation" x="3000" y="846"/>
         </scene>
         <!--Shipping-->
         <scene sceneID="WTk-qi-rXu">
@@ -461,7 +462,7 @@
                                 <rect key="frame" x="20" y="159" width="374" height="216"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fg-KH-OGV">
-                                <rect key="frame" x="20" y="108" width="374" height="41"/>
+                                <rect key="frame" x="20" y="160" width="374" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -493,9 +494,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7px-wx-oeh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3763.7681159420295" y="761.38392857142856"/>
+            <point key="canvasLocation" x="3784" y="846"/>
         </scene>
-        <!--Payment View Controller-->
+        <!--Payment-->
         <scene sceneID="Pxo-aQ-553">
             <objects>
                 <viewController id="CBz-Aq-7a1" customClass="PaymentViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
@@ -516,32 +517,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oR0-i1-8zC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wKH-gx-3au"/>
+                    <navigationItem key="navigationItem" title="Payment" id="wKH-gx-3au"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Np-Os-qPQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4510" y="761"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="zYv-ok-ozj">
-            <objects>
-                <tabBarController id="v4O-3L-pto" sceneMemberID="viewController">
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="giG-f9-5rQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="RHJ-qz-PRY" kind="relationship" relationship="viewControllers" id="c0P-jo-VX2"/>
-                        <segue destination="dZz-bn-PDe" kind="relationship" relationship="viewControllers" id="Imt-ck-3lN"/>
-                        <segue destination="iP7-Du-gWC" kind="relationship" relationship="viewControllers" id="hEo-hZ-TyD"/>
-                        <segue destination="HWA-XI-JpC" kind="relationship" relationship="viewControllers" id="HRo-LO-D9Q"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dGm-Ic-nvR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-642" y="537"/>
+            <point key="canvasLocation" x="4526" y="846"/>
         </scene>
         <!--Contact-->
         <scene sceneID="bKq-UV-aYa">
@@ -552,7 +532,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeE-s7-Y5D">
-                                <rect key="frame" x="125" y="98" width="164" height="41"/>
+                                <rect key="frame" x="125" y="150" width="164" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -566,6 +546,7 @@
                         <viewLayoutGuide key="safeArea" id="0Hr-gn-oyJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contact" image="phone" catalog="system" id="nEo-ew-tt2"/>
+                    <navigationItem key="navigationItem" id="Dlp-8j-daz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMS-XE-3mM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -580,7 +561,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22w-sI-AYR">
-                                <rect key="frame" x="138.5" y="98" width="137" height="41"/>
+                                <rect key="frame" x="138.5" y="150" width="137" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -594,10 +575,82 @@
                         <viewLayoutGuide key="safeArea" id="Xex-7r-5Uc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About Us" image="info.circle" catalog="system" id="fEa-xx-hSM"/>
+                    <navigationItem key="navigationItem" id="pVZ-jV-WBt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1K-3f-SXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="-545"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="SO5-aO-Nbm">
+            <objects>
+                <viewController id="xrF-4x-s6m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bzV-aL-BQm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AE1-gJ-Hwa">
+                                <rect key="frame" x="168.5" y="358" width="77" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmk-gh-l7t">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="Sign In"/>
+                                        <connections>
+                                            <segue destination="fnp-vJ-0TE" kind="showDetail" id="ldF-za-wu7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8M-H5-liz">
+                                        <rect key="frame" x="0.0" y="50" width="77" height="30"/>
+                                        <state key="normal" title="About Us"/>
+                                        <connections>
+                                            <segue destination="iP7-Du-gWC" kind="show" id="lzg-bN-e36"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K4-l3-XyJ">
+                                        <rect key="frame" x="0.0" y="100" width="77" height="30"/>
+                                        <state key="normal" title="Shop"/>
+                                        <connections>
+                                            <segue destination="RHJ-qz-PRY" kind="show" id="bjZ-Sd-NQJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jup-sd-oHh">
+                                        <rect key="frame" x="0.0" y="150" width="77" height="30"/>
+                                        <state key="normal" title="Contact Us"/>
+                                        <connections>
+                                            <segue destination="HWA-XI-JpC" kind="show" id="dfW-Js-IYv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AE1-gJ-Hwa" firstAttribute="centerX" secondItem="bzV-aL-BQm" secondAttribute="centerX" id="Vgu-k4-BLU"/>
+                            <constraint firstItem="AE1-gJ-Hwa" firstAttribute="centerY" secondItem="bzV-aL-BQm" secondAttribute="centerY" id="fAB-at-C2o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YCI-Vc-INy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="A2p-hd-uqO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpe-QO-uno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-609" y="122"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o4T-xF-1Bn">
+            <objects>
+                <viewController id="fnp-vJ-0TE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KRQ-zl-Hl0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PrR-AI-Bq0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1xG-vQ-KdA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xW-sE-JYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="122"/>
         </scene>
         <!--Account-->
         <scene sceneID="pkG-od-qdP">
@@ -608,7 +661,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbJ-jQ-J0k">
-                                <rect key="frame" x="119.5" y="108" width="175" height="41"/>
+                                <rect key="frame" x="119.5" y="64" width="175" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -625,7 +678,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uST-Kr-t2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="99"/>
+            <point key="canvasLocation" x="861" y="122"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zXO-fc-XAC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4tL-Vg-HYS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Y8g-7e-l6g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xrF-4x-s6m" kind="relationship" relationship="rootViewController" id="Jo1-ES-gKb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTh-5G-Dvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1236" y="122"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
