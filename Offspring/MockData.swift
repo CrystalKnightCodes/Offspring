@@ -11,11 +11,7 @@ import UIKit
 
 // class MockData {
     // Properties
-    var essentials: [Product] = []
-    var diapers: [Product] = []
-    var wipes: [Product] = []
-    var bundles: [Product] = []
-    var samples: [Product] = []
+
 
     // Essentials
     let bumCleansingSpray = Product(name: "Bum Cleansing Spray",
@@ -81,7 +77,7 @@ import UIKit
                              wipesPackQuantity: 1,
                              wipes: wipes320count)
     
-let miniBundle = Bundle(name: "Diapers & Wipes Mini Bundle",
+    let miniBundle = Bundle(name: "Diapers & Wipes Mini Bundle",
                         sku: "333-NB/1",
                         type: .bundles,
                         image: UIImage(),
@@ -94,29 +90,26 @@ let miniBundle = Bundle(name: "Diapers & Wipes Mini Bundle",
                         wipes: wipes80count)
     
     // Samples
+    let diapersAndWipesSample = Product(name: "Free Sample of Diapers and Wipes",
+                                        sku: "DWS-NB/1",
+                                        type: .samples,
+                                        image: UIImage(),
+                                        price: 0.00,
+                                        weight: 0.8,
+                                        description: "Get a FREE 3 Pack of our Fashion Diapers and a 20 Pack of our Organic Wipes.")
     
+    let freeSizingSample = Product(name: "Free Sizing Samples - Two Diaper Sizes",
+                                   sku: "SS-NB/1&1/2",
+                                   type: .samples,
+                                   image: UIImage(),
+                                   price: 0.00,
+                                   weight: 0.6,
+                                   description: "Get TWO FREE 3 Packs of our Fashion Diapers in Our Leaf Print.")
     
-    // Methods
-    func createEssentials() {
-        essentials.append(bumCleansingSpray)
-    }
-    
-    func createDiapers() {
-        diapers.append(diapersSinglePack)
-        diapers.append(diapersFourPack)
-    }
-    
-    func createWipes() {
-        wipes.append(wipes20count)
-        wipes.append(wipes80count)
-        wipes.append(wipes320count)
-    }
-    
-    func createBundles() {
-        
-    }
-    
-    func createSamples() {
-        
-    }
+// Product Arrays
+    var essentials: [Product] = [bumCleansingSpray]
+    var diapers: [Diaper] = [diapersSinglePack, diapersFourPack]
+    var wipes: [Product] = [wipes20count, wipes80count, wipes320count]
+    var bundles: [Bundle] = [miniBundle, largeBundle]
+    var samples: [Product] = [diapersAndWipesSample, freeSizingSample]
 //}
