@@ -9,7 +9,18 @@
 import UIKit
 
 class ProductDetailViewController: UIViewController {
-
+    // MARK: - Properties
+    var product: Product?
+    
+    // MARK: - Outlets
+    @IBOutlet var productImage: UIImageView!
+    @IBOutlet var priceLabel: UILabel!
+    @IBOutlet var skuLabel: UILabel!
+    @IBOutlet var quantityTextField: UITextField!
+    @IBOutlet var sizePicker: UIPickerView!
+    @IBOutlet var printPicker: UIPickerView!
+    @IBOutlet var subscriptionControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -322,6 +322,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="priceLabel" destination="gU7-mZ-98V" id="CMM-qi-gHw"/>
+                        <outlet property="printPicker" destination="hID-Lz-aEq" id="l8M-a4-hvK"/>
+                        <outlet property="productImage" destination="2AU-WC-LPs" id="PHh-7K-EHY"/>
+                        <outlet property="quantityTextField" destination="MmG-l7-aDV" id="vgD-Cb-KhN"/>
+                        <outlet property="sizePicker" destination="WPO-Gm-Ape" id="2ef-p2-aUc"/>
+                        <outlet property="skuLabel" destination="Oyi-K9-duv" id="SEv-yU-7No"/>
+                        <outlet property="subscriptionControl" destination="9ph-fd-uae" id="q5b-vd-UqC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZk-jf-q2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -596,7 +605,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
                                         <state key="normal" title="Sign In"/>
                                         <connections>
-                                            <segue destination="fnp-vJ-0TE" kind="showDetail" id="ldF-za-wu7"/>
+                                            <segue destination="fnp-vJ-0TE" kind="show" identifier="SignInSegue" id="ldF-za-wu7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8M-H5-liz">
@@ -636,21 +645,21 @@
             </objects>
             <point key="canvasLocation" x="-609" y="122"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In-->
         <scene sceneID="o4T-xF-1Bn">
             <objects>
                 <viewController id="fnp-vJ-0TE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KRQ-zl-Hl0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PrR-AI-Bq0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1xG-vQ-KdA"/>
+                    <navigationItem key="navigationItem" title="Sign In" id="1xG-vQ-KdA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xW-sE-JYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="122"/>
+            <point key="canvasLocation" x="138" y="122"/>
         </scene>
         <!--Account-->
         <scene sceneID="pkG-od-qdP">
