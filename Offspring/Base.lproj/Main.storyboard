@@ -344,14 +344,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ey2-g6-mPq" userLabel="Price Stack View">
                                 <rect key="frame" x="20" y="618" width="374" height="20.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roT-rM-0O3">
-                                        <rect key="frame" x="0.0" y="0.0" width="313.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Total Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roT-rM-0O3">
+                                        <rect key="frame" x="0.0" y="0.0" width="89.5" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eda-SN-TDm">
-                                        <rect key="frame" x="333.5" y="0.0" width="40.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eda-SN-TDm">
+                                        <rect key="frame" x="109.5" y="0.0" width="264.5" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -359,7 +359,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a note to your order:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LE-jB-cLo">
-                                <rect key="frame" x="20" y="648.5" width="198.5" height="20.5"/>
+                                <rect key="frame" x="20" y="648.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -398,6 +398,7 @@
                             <constraint firstItem="Ey2-g6-mPq" firstAttribute="top" secondItem="VHK-Nn-IzQ" secondAttribute="bottom" constant="10" id="Gej-Pa-fVL"/>
                             <constraint firstItem="VHK-Nn-IzQ" firstAttribute="leading" secondItem="X94-UD-dfp" secondAttribute="leading" constant="20" id="NRH-y5-5Yf"/>
                             <constraint firstItem="X94-UD-dfp" firstAttribute="trailing" secondItem="zIt-Uj-uCX" secondAttribute="trailing" constant="20" id="PM9-sQ-AVN"/>
+                            <constraint firstItem="X94-UD-dfp" firstAttribute="trailing" secondItem="0LE-jB-cLo" secondAttribute="trailing" constant="20" id="POo-fe-foV"/>
                             <constraint firstItem="zIt-Uj-uCX" firstAttribute="leading" secondItem="X94-UD-dfp" secondAttribute="leading" constant="20" id="b2p-Ns-LKQ"/>
                             <constraint firstItem="VHK-Nn-IzQ" firstAttribute="top" secondItem="X94-UD-dfp" secondAttribute="top" constant="20" id="bh6-uv-8m9"/>
                             <constraint firstItem="zIt-Uj-uCX" firstAttribute="top" secondItem="0LE-jB-cLo" secondAttribute="bottom" constant="10" id="gfM-ob-8KG"/>
@@ -465,9 +466,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwP-bL-6yt">
-                                <rect key="frame" x="169" y="759" width="76" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwP-bL-6yt">
+                                <rect key="frame" x="169" y="806" width="76" height="36"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <state key="normal" title="Payment"/>
                                 <connections>
@@ -481,6 +481,8 @@
                             <constraint firstItem="i13-1F-mI1" firstAttribute="trailing" secondItem="0fg-KH-OGV" secondAttribute="trailing" constant="20" id="9gn-Fu-Of4"/>
                             <constraint firstItem="0fg-KH-OGV" firstAttribute="leading" secondItem="i13-1F-mI1" secondAttribute="leading" constant="20" id="MSP-jw-5D4"/>
                             <constraint firstItem="EjO-sd-56f" firstAttribute="top" secondItem="0fg-KH-OGV" secondAttribute="bottom" constant="10" id="Vpz-Ca-kbg"/>
+                            <constraint firstItem="HwP-bL-6yt" firstAttribute="centerX" secondItem="wxI-Ci-yAT" secondAttribute="centerX" id="XfM-ZM-NVN"/>
+                            <constraint firstItem="i13-1F-mI1" firstAttribute="bottom" secondItem="HwP-bL-6yt" secondAttribute="bottom" constant="20" id="dJt-E2-RwP"/>
                             <constraint firstItem="EjO-sd-56f" firstAttribute="leading" secondItem="i13-1F-mI1" secondAttribute="leading" constant="20" id="g6d-dP-7v9"/>
                             <constraint firstItem="EjO-sd-56f" firstAttribute="trailing" secondItem="i13-1F-mI1" secondAttribute="trailing" constant="20" id="mxH-DY-grF"/>
                             <constraint firstItem="0fg-KH-OGV" firstAttribute="centerX" secondItem="wxI-Ci-yAT" secondAttribute="centerX" id="uM6-K2-YxK"/>
