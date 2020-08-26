@@ -9,7 +9,7 @@
 import UIKit
 
 class CategoryViewController: UIViewController {
-
+    let mockData = MockData()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,18 +21,23 @@ class CategoryViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DiapersSegue" {
             let destinationVC = segue.destination as! ProductsTableViewController
+            let diapers = mockData.createDiapers()
             destinationVC.productArray = diapers
         } else if segue.identifier == "WipesSegue" {
             let destinationVC = segue.destination as! ProductsTableViewController
+            let wipes = mockData.createWipes()
             destinationVC.productArray = wipes
         } else if segue.identifier == "EssentialsSegue" {
             let destinationVC = segue.destination as! ProductsTableViewController
+            let essentials = mockData.createEssentials()
             destinationVC.productArray = essentials
         } else if segue.identifier == "BundlesSegue" {
             let destinationVC = segue.destination as! ProductsTableViewController
+            let bundles = mockData.createBundles()
             destinationVC.productArray = bundles
         } else if segue.identifier == "SampleSegue" {
             let destinationVC = segue.destination as! ProductsTableViewController
+            let samples = mockData.createSamples()
             destinationVC.productArray = samples
         }
     }
