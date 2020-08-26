@@ -10,7 +10,6 @@
         <!--Shop-->
         <scene sceneID="nSY-uX-uLz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4JF-ep-YPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Shop" id="RHJ-qz-PRY" customClass="CategoryViewController" customModule="Offspring" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zbY-bk-8iN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -134,6 +133,7 @@
                     <tabBarItem key="tabBarItem" title="Shop" image="bag" catalog="system" id="g3n-Ms-erf"/>
                     <navigationItem key="navigationItem" title="Shop" id="DEd-xj-mB2"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4JF-ep-YPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-610" y="837"/>
         </scene>
@@ -266,12 +266,12 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBc-G6-mif">
-                                <rect key="frame" x="123.5" y="701.5" width="167" height="53"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <rect key="frame" x="152.5" y="701.5" width="109" height="39"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <state key="normal" title="Add to Cart"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Product description." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Ee-vS-B1O">
-                                <rect key="frame" x="20" y="764.5" width="374" height="111.5"/>
+                                <rect key="frame" x="20" y="750.5" width="374" height="125.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -326,6 +326,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionTextView" destination="3Ee-vS-B1O" id="SB9-2s-6XC"/>
                         <outlet property="priceLabel" destination="gU7-mZ-98V" id="CMM-qi-gHw"/>
                         <outlet property="printPicker" destination="hID-Lz-aEq" id="l8M-a4-hvK"/>
                         <outlet property="productImage" destination="2AU-WC-LPs" id="PHh-7K-EHY"/>

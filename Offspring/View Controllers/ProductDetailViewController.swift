@@ -20,6 +20,7 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet var sizePicker: UIPickerView!
     @IBOutlet var printPicker: UIPickerView!
     @IBOutlet var subscriptionControl: UISegmentedControl!
+    @IBOutlet var descriptionTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +28,11 @@ class ProductDetailViewController: UIViewController {
     }
     
     func updateViews() {
-        productImage.image = product?.image
+        productImage.image = product?.mainImage
         priceLabel.text = "$\(String(product!.price))"
         skuLabel.text = product?.sku
         // TODO: Implement Pickers
+        descriptionTextView.text = product?.description
     }
 
     /*
