@@ -21,7 +21,7 @@ class Product {
     let name: String
     let sku: String
     let type: ProductType
-    let image: UIImage?
+    let mainImage: UIImage?
     let vendor: String
     var price: Double
     let weight: Double
@@ -30,12 +30,13 @@ class Product {
     var reviewQuantity: Int
     var isAvailable: Bool
     var isLoved: Bool
+    var imageArray: [UIImage?]
     
-    init(name: String, sku: String, type: ProductType, image: UIImage?, price: Double, weight: Double, description: String) {
+    init(name: String, sku: String, type: ProductType, mainImage: UIImage?, price: Double, weight: Double, description: String) {
         self.name = name
         self.sku = sku
         self.type = type
-        self.image = image
+        self.mainImage = mainImage
         self.vendor = "OffspringUS.com"
         self.price = price
         self.weight = weight
@@ -44,6 +45,7 @@ class Product {
         self.reviewQuantity = 0
         self.isAvailable = true
         self.isLoved = false
+        self.imageArray = [mainImage]
     }
 }
 

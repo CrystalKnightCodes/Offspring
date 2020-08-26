@@ -15,11 +15,11 @@ class Bundle: Product {
     let wipesPackQuantity: Int
     let wipes: Product
     
-    init(name: String, sku: String, type: ProductType, image: UIImage, price: Double, weight: Double, description: String, diaperPackQuantity: Int, diapers: Diaper, wipesPackQuantity: Int, wipes: Product) {
+    init(name: String, sku: String, type: ProductType, mainImage: UIImage, price: Double, weight: Double, description: String, diaperPackQuantity: Int, diapers: Diaper, wipesPackQuantity: Int, wipes: Product) {
         self.diaperPackQuantity = diaperPackQuantity
         self.diapers = diapers
         self.wipesPackQuantity = wipesPackQuantity
         self.wipes = wipes
-        super.init(name: name, sku: sku, type: type, image: image, price: price, weight: weight, description: description)
+        super.init(name: name, sku: sku, type: type, mainImage: mainImage, price: price, weight: weight, description: description)
     }
 }

@@ -32,9 +32,9 @@ class Diaper: Product {
     var size: DiaperSize
     var print: DiaperPrint
     
-    init(name: String, sku: String, type: ProductType, image: UIImage, price: Double, weight: Double, description: String, size: DiaperSize, print: DiaperPrint) {
+    init(name: String, sku: String, type: ProductType, mainImage: UIImage, price: Double, weight: Double, description: String, size: DiaperSize, print: DiaperPrint) {
         self.size = size
         self.print = print
-        super.init(name: name, sku: sku, type: type, image: image, price: price, weight: weight, description: description)
+        super.init(name: name, sku: sku, type: type, mainImage: mainImage, price: price, weight: weight, description: description)
     }
 }
